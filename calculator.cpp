@@ -2,6 +2,9 @@
 #include <string>
 using namespace std;
 
+double A = 0;
+double B = 0;
+
 void inputA();
 void inputB();
 void add();
@@ -22,7 +25,6 @@ int main() {
         cout << "5. Выполнить операцию '*'" << endl;
         cout << "6. Выполнить операцию '/'" << endl;
         cout << "0. Выход" << endl;
-        cout << "Выберите пункт меню: ";
         
         cin >> choice;
         
@@ -57,9 +59,10 @@ int main() {
     return 0;
 }
 
-// Заглушки функций
-void inputA() {
-    cout << "Функция ввода А будет реализована" << endl;
+    void inputA() {
+    cout << "Введите значение A: ";
+    cin >> A;
+    cout << "A = " << A << endl;
 }
 
 void inputB() {
