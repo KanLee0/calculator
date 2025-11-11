@@ -63,7 +63,7 @@ int main() {
     cout << "Введите значение A: ";
     cin >> A;
     cout << "A = " << A << endl;
-}
+    }
 
 void inputB() {
     cout << "Введите значение B: ";
@@ -72,7 +72,11 @@ void inputB() {
 }
 
 void add() {
-    cout << "Функция сложения будет реализована" << endl;
+    if (A == 0 && B == 0) {
+        cout << "Сначала введите значения A и B!" << endl;
+        return;
+    }
+    cout << A << " + " << B << " = " << (A + B) << endl;
 }
 
 void subtract() {
