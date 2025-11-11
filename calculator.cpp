@@ -14,7 +14,7 @@ int main() {
     bool running = true;
     
     while (running) {
-        cout << "=== Меню калькулятора ===" << endl;
+        cout << "Меню калькулятора" << endl;
         cout << "1. Ввести А" << endl;
         cout << "2. Ввести В" << endl;
         cout << "3. Выполнить операцию '+'" << endl;
@@ -57,7 +57,6 @@ int main() {
     return 0;
 }
 
-// Заглушки функций
 void inputA() {
     cout << "Функция ввода А будет реализована" << endl;
 }
