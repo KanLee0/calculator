@@ -66,7 +66,9 @@ int main() {
 }
 
 void inputB() {
-    cout << "Функция ввода В будет реализована" << endl;
+    cout << "Введите значение B: ";
+    cin >> B;
+    cout << "B = " << B << endl;
 }
 
 void add() {
