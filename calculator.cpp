@@ -62,8 +62,12 @@ void inputA() {
     cout << "Функция ввода А будет реализована" << endl;
 }
 
-void inputB() {
-    cout << "Функция ввода В будет реализована" << endl;
+void subtract() {
+    if (A == 0 && B == 0) {
+        cout << "Сначала введите значения A и B!" << endl;
+        return;
+    }
+    cout << A << " - " << B << " = " << (A - B) << endl;
 }
 
 void add() {
