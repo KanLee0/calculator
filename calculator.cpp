@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+double A = 0, B = 0;
+
 void inputA();
 void inputB();
 void add();
@@ -57,13 +59,14 @@ int main() {
     return 0;
 }
 
-// Заглушки функций
 void inputA() {
     cout << "Функция ввода А будет реализована" << endl;
 }
 
 void inputB() {
-    cout << "Функция ввода В будет реализована" << endl;
+    cout << "Введите значение B: ";
+    cin >> B;
+    cout << "B = " << B << endl;
 }
 
 void add() {
