@@ -57,7 +57,6 @@ int main() {
     return 0;
 }
 
-// Заглушки функций
 void inputA() {
     cout << "Функция ввода А будет реализована" << endl;
 }
@@ -67,7 +66,11 @@ void inputB() {
 }
 
 void add() {
-    cout << "Функция сложения будет реализована" << endl;
+    if (A == 0 && B == 0) {
+        cout << "Сначала введите значения A и B!" << endl;
+        return;
+    }
+    cout << A << " + " << B << " = " << (A + B) << endl;
 }
 
 void subtract() {
