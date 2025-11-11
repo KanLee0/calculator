@@ -80,7 +80,11 @@ void add() {
 }
 
 void subtract() {
-    cout << "Функция вычитания будет реализована" << endl;
+    if (A == 0 && B == 0) {
+        cout << "Сначала введите значения A и B!" << endl;
+        return;
+    }
+    cout << A << " - " << B << " = " << (A - B) << endl;
 }
 
 void multiply() {
