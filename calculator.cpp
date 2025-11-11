@@ -17,7 +17,7 @@ int main() {
     bool running = true;
     
     while (running) {
-        cout << "=== Меню калькулятора ===" << endl;
+        cout << "Меню калькулятора" << endl;
         cout << "1. Ввести А" << endl;
         cout << "2. Ввести В" << endl;
         cout << "3. Выполнить операцию '+'" << endl;
@@ -25,7 +25,7 @@ int main() {
         cout << "5. Выполнить операцию '*'" << endl;
         cout << "6. Выполнить операцию '/'" << endl;
         cout << "0. Выход" << endl;
-        
+        cout << "Введите цифру: ";
         cin >> choice;
         
         switch (choice) {
