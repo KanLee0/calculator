@@ -2,6 +2,9 @@
 #include <string>
 using namespace std;
 
+double A = 0;
+double B = 0;
+
 void inputA();
 void inputB();
 void add();
@@ -14,7 +17,7 @@ int main() {
     bool running = true;
     
     while (running) {
-        cout << "=== Меню калькулятора ===" << endl;
+        cout << "Меню калькулятора" << endl;
         cout << "1. Ввести А" << endl;
         cout << "2. Ввести В" << endl;
         cout << "3. Выполнить операцию '+'" << endl;
@@ -22,8 +25,7 @@ int main() {
         cout << "5. Выполнить операцию '*'" << endl;
         cout << "6. Выполнить операцию '/'" << endl;
         cout << "0. Выход" << endl;
-        cout << "Выберите пункт меню: ";
-        
+        cout << "Введите цифру: ";
         cin >> choice;
         
         switch (choice) {
@@ -57,21 +59,32 @@ int main() {
     return 0;
 }
 
-// Заглушки функций
-void inputA() {
-    cout << "Функция ввода А будет реализована" << endl;
-}
+    void inputA() {
+    cout << "Введите значение A: ";
+    cin >> A;
+    cout << "A = " << A << endl;
+    }
 
 void inputB() {
-    cout << "Функция ввода В будет реализована" << endl;
+    cout << "Введите значение B: ";
+    cin >> B;
+    cout << "B = " << B << endl;
 }
 
 void add() {
-    cout << "Функция сложения будет реализована" << endl;
+    if (A == 0 && B == 0) {
+        cout << "Сначала введите значения A и B!" << endl;
+        return;
+    }
+    cout << A << " + " << B << " = " << (A + B) << endl;
 }
 
 void subtract() {
-    cout << "Функция вычитания будет реализована" << endl;
+    if (A == 0 && B == 0) {
+        cout << "Сначала введите значения A и B!" << endl;
+        return;
+    }
+    cout << A << " - " << B << " = " << (A - B) << endl;
 }
 
 void multiply() {
