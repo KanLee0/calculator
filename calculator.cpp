@@ -9,6 +9,9 @@ void subtract();
 void multiply();
 void divide();
 
+int A=0;
+int B=0;
+
 int main() {
     int choice;
     bool running = true;
